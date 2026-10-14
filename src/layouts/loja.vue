@@ -1,5 +1,6 @@
 <template>
   <div class="loja">
+    <TopoLoja />
     <slot />
   </div>
 </template>

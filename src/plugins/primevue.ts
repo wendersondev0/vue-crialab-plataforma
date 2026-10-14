@@ -3,6 +3,16 @@ import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
 import ToastService from 'primevue/toastservice'
 import ConfirmationService from 'primevue/confirmationservice'
+import Button from 'primevue/button'
+import Checkbox from 'primevue/checkbox'
+import Column from 'primevue/column'
+import DataTable from 'primevue/datatable'
+import InputNumber from 'primevue/inputnumber'
+import InputText from 'primevue/inputtext'
+import Message from 'primevue/message'
+import Password from 'primevue/password'
+import Tag from 'primevue/tag'
+import Toast from 'primevue/toast'
 
 const CriaLab = definePreset(Aura, {
   semantic: {
@@ -41,4 +51,14 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
   nuxtApp.vueApp.use(ToastService)
   nuxtApp.vueApp.use(ConfirmationService)
+  nuxtApp.vueApp.component('Button', Button)
+  nuxtApp.vueApp.component('Checkbox', Checkbox)
+  nuxtApp.vueApp.component('Column', Column)
+  nuxtApp.vueApp.component('DataTable', DataTable)
+  nuxtApp.vueApp.component('InputNumber', InputNumber)
+  nuxtApp.vueApp.component('InputText', InputText)
+  nuxtApp.vueApp.component('Message', Message)
+  nuxtApp.vueApp.component('Password', Password)
+  nuxtApp.vueApp.component('Tag', Tag)
+  nuxtApp.vueApp.component('Toast', Toast)
 })
