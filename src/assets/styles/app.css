@@ -1,0 +1,24 @@
+:root {
+  --cria-laranja: #e8772a;
+  --cria-teal: #148f93;
+  --cria-creme: #f6f1e7;
+  --cria-tinta: #1b2430;
+  --cria-branco: #ffffff;
+}
+
+html,
+body,
+#__nuxt {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: var(--cria-tinta);
+  background: var(--cria-creme);
+}
+
+a {
+  color: var(--cria-teal);
+}
